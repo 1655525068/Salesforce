@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <template for:each={contacts.data} for:item="contact">
+            <li key={contact.Id}>{contact.Name}
+            </li>
+        </template>
+    </lightning-card>
+    <lightning-card>
+        <template for:each={data} for:item="contact">
+            <li key={contact.Id}>{contact.Name}
+            </li>
+        </template>
+    </lightning-card>
+    <lightning-card>
+        <template for:each={data2} for:item="contact">
+            <li key={contact.Id}>{contact.Name}
+            </li>
+        </template>
+    </lightning-card>
+</template>

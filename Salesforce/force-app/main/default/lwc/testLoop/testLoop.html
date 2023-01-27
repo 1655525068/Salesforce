@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="for:each">
+        <div class="slds-var-m-around_medium">
+            <template for:each={numList} for:item="num">
+                <li key={num}>{num}</li>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="iterator">
+        <div class="slds-var-m-around_medium">
+            <template iterator:person={persons}>
+                <li key={person.value.id}>
+                    <template if:true={person.first}>
+                        this first
+                    </template>
+                    <br/>
+                    {person.value.name}:{person.value.age}
+                    <template if:true={person.last}>
+                        <br/>this last
+                    </template>
+                </li>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,6 @@
+<template>
+    hello {myName}!
+    <lightning-input name="myName" label="enter the name:" onchange={changeName}></lightning-input>
+    <lightning-combobox name="category" label="category" placeholder="请选择" options={categoryOptions} onchange={handleCategoryChange} required></lightning-combobox>
+    选择项目{selectedValue}!!
+</template>
